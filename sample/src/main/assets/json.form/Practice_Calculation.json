@@ -1,0 +1,141 @@
+{
+  "count": "1",
+  "encounter_type": "Practice Calculation",
+  "entity_id": "",
+  "relational_id": "",
+  "validate_on_submit": true,
+  "show_errors_on_submit": true,
+  "metadata": {
+    "start": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "start",
+      "openmrs_entity_id": "163137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "end": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "end",
+      "openmrs_entity_id": "163138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "today": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "encounter",
+      "openmrs_entity_id": "encounter_date"
+    },
+    "deviceid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "deviceid",
+      "openmrs_entity_id": "163149AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "subscriberid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "subscriberid",
+      "openmrs_entity_id": "163150AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "simserial": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "simserial",
+      "openmrs_entity_id": "163151AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "phonenumber": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "phonenumber",
+      "openmrs_entity_id": "163152AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "encounter_location": "",
+    "look_up": {
+      "entity_id": "",
+      "value": ""
+    }
+  },
+  "step1": {
+    "title": "Practice Calculation",
+    "fields": [
+
+      {
+        "key": "select_condom_type",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "label_text_style": "bold",
+        "type": "native_radio",
+        "label": "Select type of condom",
+        "text_color": "#000000",
+        "label_info_text": "Choose condom type!",
+        "v_required": {
+          "value": true
+        },
+        "options": [
+          {
+            "key": "Male",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Male"
+          },
+          {
+            "key": "Female",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Female"
+          }
+        ]
+      },
+
+      {
+        "key": "Condom_brand_name",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "person",
+        "openmrs_entity_id": "name",
+        "type": "edit_text",
+        "hint": "Name of Condom Brand"
+      },
+      {
+        "key": "male_condoms_total",
+        "type": "edit_text",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "hint": "Number of Male condoms given",
+        "v_numeric_integer": {
+          "required": "true",
+          "value": "true",
+          "err": "Enter Number"
+        }
+      },
+      {
+        "key": "Female_condoms_total",
+        "type": "edit_text",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "hint": "Number of Male condoms given",
+        "v_numeric_integer": {
+          "value": "true",
+          "err": "Enter the number"
+        }
+      },
+      {
+        "key": "condom_total",
+        "type": "edit_text",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "hint": "Total number of condoms given",
+        "v_numeric_integer": {
+          "value": "true",
+          "err": "Enter the number"
+        }
+      }
+
+    ]
+
+  }
+
+}

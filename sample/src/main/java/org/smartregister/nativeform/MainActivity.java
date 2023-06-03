@@ -32,16 +32,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.child_enrollment).setOnClickListener(this);
         findViewById(R.id.wizard_form).setOnClickListener(this);
-        findViewById(R.id.native_form_basic).setOnClickListener(this);
+//        findViewById(R.id.native_form_basic).setOnClickListener(this);
         findViewById(R.id.update_radio_button).setOnClickListener(this);
         findViewById(R.id.rules_engine_skip_logic).setOnClickListener(this);
         findViewById(R.id.numbers_selector_widget).setOnClickListener(this);
         findViewById(R.id.generic_dialog_button).setOnClickListener(this);
-        findViewById(R.id.validation_form_button).setOnClickListener(this);
-        findViewById(R.id.expansion_panel_button).setOnClickListener(this);
-        findViewById(R.id.repeating_group_button).setOnClickListener(this);
+//        findViewById(R.id.validation_form_button).setOnClickListener(this);
+//        findViewById(R.id.expansion_panel_button).setOnClickListener(this);
+//        findViewById(R.id.repeating_group_button).setOnClickListener(this);
         findViewById(R.id.multiselect_list).setOnClickListener(this);
         findViewById(R.id.optibp_widget).setOnClickListener(this);
+        findViewById(R.id.condom_distro).setOnClickListener(this);
+        findViewById(R.id.outlet_registration).setOnClickListener(this);
+        findViewById(R.id.Practice_calc).setOnClickListener(this);
+
     }
 
     @Override
@@ -271,9 +275,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.wizard_form:
                     startForm(REQUEST_CODE_GET_JSON, "wizard_form", null, false);
                     break;
-                case R.id.native_form_basic:
-                    startForm(REQUEST_CODE_GET_JSON, "basic_form", null, false);
-                    break;
+//                case R.id.native_form_basic:
+//                    startForm(REQUEST_CODE_GET_JSON, "basic_form", null, false);
+//                    break;
                 case R.id.update_radio_button:
                     startForm(REQUEST_CODE_GET_JSON, "update_radio_button", null, false);
                     break;
@@ -286,21 +290,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.generic_dialog_button:
                     startForm(REQUEST_CODE_GET_JSON, "generic_popup_form", null, false);
                     break;
-                case R.id.validation_form_button:
-                    startForm(REQUEST_CODE_GET_JSON, "validation_form", null, false);
-                    break;
-                case R.id.expansion_panel_button:
-                    startForm(REQUEST_CODE_GET_JSON, "expansion_panel_form", null, false);
-                    break;
-                case R.id.repeating_group_button:
-                    startForm(REQUEST_CODE_GET_JSON, "repeating_group", null, false);
-                    break;
+//                case R.id.validation_form_button:
+//                    startForm(REQUEST_CODE_GET_JSON, "validation_form", null, false);
+//                    break;
+//                case R.id.expansion_panel_button:
+//                    startForm(REQUEST_CODE_GET_JSON, "expansion_panel_form", null, false);
+//                    break;
+//                case R.id.repeating_group_button:
+//                    startForm(REQUEST_CODE_GET_JSON, "repeating_group", null, false);
+//                    break;
                 case R.id.multiselect_list:
                     startForm(REQUEST_CODE_GET_JSON, "multi_select_list_form", null, false);
                     break;
                 case R.id.optibp_widget:
                     startForm(REQUEST_CODE_GET_JSON, "optibp_demo_form", null, false);
                     break;
+                case R.id.condom_distro:
+                    startForm(REQUEST_CODE_GET_JSON, "condom_distro", null, false);
+                    break;
+
+                case R.id.outlet_registration:
+                    startForm(REQUEST_CODE_GET_JSON, "Outlet_registration", null, false);
+                    break;
+                case R.id.Practice_calc:
+                    startForm(REQUEST_CODE_GET_JSON, "Practice_Calculation", null, false);
+                    break;
+
                 default:
                     break;
             }

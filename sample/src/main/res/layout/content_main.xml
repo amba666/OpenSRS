@@ -64,24 +64,6 @@
             android:theme="@style/NativeFormsAppTheme" />
 
         <Button
-            android:id="@+id/validation_form_button"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/form_validation"
-            android:textColor="@android:color/white"
-            android:theme="@style/NativeFormsAppTheme" />
-
-        <Button
-            android:id="@+id/native_form_basic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/basic_form"
-            android:textColor="@android:color/white"
-            android:theme="@style/NativeFormsAppTheme" />
-        <Button
             android:id="@+id/update_radio_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,24 +72,43 @@
             android:textColor="@android:color/white"
             android:theme="@style/NativeFormsAppTheme" />
 
-        <Button
-            android:id="@+id/expansion_panel_button"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/expansion_panel"
-            android:textColor="@android:color/white"
-            android:theme="@style/NativeFormsAppTheme" />
+<!--        <Button-->
+<!--            android:id="@+id/validation_form_button"-->
+<!--            style="@style/Widget.AppCompat.Button.Colored"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="@string/form_validation"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:theme="@style/NativeFormsAppTheme" />-->
 
-        <Button
-            android:id="@+id/repeating_group_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/repeating_group"
-            android:textColor="@android:color/white"
-            android:theme="@style/NativeFormsAppTheme" />
+<!--        <Button-->
+<!--            android:id="@+id/native_form_basic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="@string/basic_form"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:theme="@style/NativeFormsAppTheme" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/expansion_panel_button"-->
+<!--            style="@style/Widget.AppCompat.Button.Colored"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="@string/expansion_panel"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:theme="@style/NativeFormsAppTheme" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/repeating_group_button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="@string/repeating_group"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:theme="@style/NativeFormsAppTheme" />-->
 
         <Button
             android:id="@+id/multiselect_list"
@@ -125,6 +126,31 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/optibp_widget"
+            android:textColor="@android:color/white"
+            android:theme="@style/NativeFormsAppTheme" />
+
+        <Button
+            android:id="@+id/condom_distro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Condom Distro"
+            android:textColor="@android:color/white"
+            android:theme="@style/NativeFormsAppTheme" />
+        <Button
+            android:id="@+id/outlet_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Outlet Registration"
+            android:textColor="@android:color/white"
+            android:theme="@style/NativeFormsAppTheme" />
+        <Button
+            android:id="@+id/Practice_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Practice Calculation"
             android:textColor="@android:color/white"
             android:theme="@style/NativeFormsAppTheme" />
 

@@ -1,0 +1,274 @@
+{
+  "count": "1",
+  "encounter_type": "Condom Distribution",
+  "entity_id": "",
+  "relational_id": "",
+  "validate_on_submit": true,
+  "show_errors_on_submit": true,
+  "metadata": {
+    "start": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "start",
+      "openmrs_entity_id": "163137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "end": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "end",
+      "openmrs_entity_id": "163138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "today": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "encounter",
+      "openmrs_entity_id": "encounter_date"
+    },
+    "deviceid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "deviceid",
+      "openmrs_entity_id": "163149AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "subscriberid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "subscriberid",
+      "openmrs_entity_id": "163150AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "simserial": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "simserial",
+      "openmrs_entity_id": "163151AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "phonenumber": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "phonenumber",
+      "openmrs_entity_id": "163152AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "encounter_location": "",
+    "look_up": {
+      "entity_id": "",
+      "value": ""
+    }
+  },
+  "step1": {
+    "title": "Condom Distribution",
+    "fields": [
+      {
+        "key": "occurred_date",
+        "type": "date_picker",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "hint": "Condom Issuing Date",
+        "max_date": "today",
+        "v_required": {
+          "value": true,
+          "err": "Please specify the date "
+        }
+      },
+      {
+        "key": "select_condom_type",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Select type of condom",
+        "text_color": "#000000",
+        "label_info_text": "Choose condom type!",
+        "v_required": {
+          "value": true
+        },
+        "options": [
+          {
+            "key": "Male",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Male"
+          },
+          {
+            "key": "Female",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Female"
+          }
+        ]
+      },
+      {
+        "key": "select_brand",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Select Condom Brand",
+        "text_color": "#000000",
+        "v_required": {
+          "value": true
+        },
+        "options": [
+          {
+            "key": "Public Sector Condom",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Public Sector Condom"
+          },
+          {
+            "key": "Dume",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Dume"
+          },
+          {
+            "key": "Salama",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Salama"
+          },
+          {
+            "key": "Familia",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Familia"
+          },
+          {
+            "key": "Others",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Others"
+          }
+        ]
+      },
+      {
+        "key": "condom_total",
+        "type": "edit_text",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "hint": "Number of Issued Condom(Pieces)",
+        "v_numeric_integer": {
+          "value": "true",
+          "err": "Must be a rounded number"
+        }
+      },
+      {
+        "key": "select_distr_points",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Select Distribution Points",
+        "text_color": "#000000",
+        "v_required": {
+          "value": true
+        },
+        "options": [
+          {
+            "key": "POS",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "POS"
+          }
+        ]
+      },
+      {
+        "key": "select_service",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Select Point Of Services",
+        "text_color": "#000000",
+        "v_required": {
+          "value": true
+        },
+        "options": [
+          {
+            "key": "CTC",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "CTC"
+          },
+          {
+            "key": "RCH Clinic",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "RCH Clinic"
+          },
+          {
+            "key": "OPT",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "OPT"
+          },
+          {
+            "key": "TB Clinic",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "TB Clinic"
+          },
+          {
+            "key": "Out Reach",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Out Reach"
+          },
+          {
+            "key": "Other",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Other"
+          }
+        ]
+      },
+      {
+        "key": "Person_name",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "person",
+        "openmrs_entity_id": "name",
+        "type": "edit_text",
+        "hint": "Name of the Person receiving condoms"
+      },
+      {
+        "key": "Person_position",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "person",
+        "openmrs_entity_id": "position",
+        "type": "edit_text",
+        "hint": "Position of the Person receiving condoms"
+      },
+      {
+        "key": "Person_phone",
+        "type": "edit_text",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "hint": "Number of Issued Condom(Pieces)",
+        "v_numeric_integer": {
+          "required": "true",
+          "value": "true",
+          "err": "Phone Number Of The Person receiving condoms"
+        }
+      }
+    ],
+    "v_required": {
+      "value": "true"
+    }
+  }
+
+}
