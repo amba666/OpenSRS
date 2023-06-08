@@ -1,0 +1,339 @@
+{
+  "count": "1",
+  "encounter_type": "MC Procedure",
+  "entity_id": "",
+  "relational_id": "",
+  "validate_on_submit": true,
+  "show_errors_on_submit": true,
+  "metadata": {
+    "start": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "start",
+      "openmrs_entity_id": "163137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "end": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "end",
+      "openmrs_entity_id": "163138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "today": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "encounter",
+      "openmrs_entity_id": "encounter_date"
+    },
+    "deviceid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "deviceid",
+      "openmrs_entity_id": "163149AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "subscriberid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "subscriberid",
+      "openmrs_entity_id": "163150AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "simserial": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "simserial",
+      "openmrs_entity_id": "163151AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "phonenumber": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "phonenumber",
+      "openmrs_entity_id": "163152AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "encounter_location": "",
+    "look_up": {
+      "entity_id": "",
+      "value": ""
+    }
+  },
+  "step1": {
+    "title": "MC Procedure",
+    "fields": [
+      {
+        "key": "male_circumcision_procedure_conducted",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Male circumcision procedure conducted? ",
+        "label_text_style": "bold",
+        "text_color": "#000000",
+
+        "options": [
+          {
+            "key": "yes",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Yes"
+          },
+          {
+            "key": "no",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "key": "start_time",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "time_picker",
+        "hint": "Start Time",
+        "expanded": false,
+        "duration": {
+          "label": "Start Time"
+        },
+        "v_required": {
+          "value": true,
+          "err": "Please enter the start time"
+        }
+      },
+      {
+        "key": "end_time",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "time_picker",
+        "hint": "End Time",
+        "expanded": false,
+        "duration": {
+          "label": "End Time"
+        },
+        "v_required": {
+          "value": true,
+          "err": "Please enter the End time"
+        }
+      },
+      {
+        "key": "anesthesia_administered",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Anesthesia administered",
+        "label_text_style": "bold",
+        "text_color": "#000000",
+
+        "options": [
+          {
+            "key": "injectable_lignocaine",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Injectable Lignocaine"
+          },
+          {
+            "key": "topical_cream",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Topical Cream"
+          },
+          {
+            "key": "other",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "other"
+          }
+        ]
+      },
+      {
+        "key": "lignocain_dosage",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "edit_text",
+        "hint": "Lignocain dosage",
+        "v_required": {
+          "value": "true",
+          "err": "Please enter dosage"
+        }
+      },
+      {
+        "key": "Bupvacaine_dosage",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "edit_text",
+        "hint": "Bupvacaine dosage",
+        "v_required": {
+          "value": "true",
+          "err": "Please enter dosage"
+        }
+      },
+      {
+        "key": "male_circumcision_method_used",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Male circumcision method used",
+        "label_text_style": "bold",
+        "text_color": "#000000",
+
+        "options": [
+          {
+            "key": "dorsal_slit",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Dorsal slit"
+          },
+          {
+            "key": "sleeve_resection",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Sleeve resection"
+          },
+          {
+            "key": "device",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Device"
+          }
+        ]
+      },
+      {
+        "key": "surgeon_name",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "edit_text",
+        "hint": "Surgeon's Name",
+        "v_required": {
+          "value": "true",
+          "err": "Please enter the Surgeon's Name"
+        }
+      },
+      {
+        "key": "surgeon_cadre",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+
+        "type": "check_box",
+        "label": "Surgeons Cadre",
+        "label_text_style": "bold",
+        "options": [
+          {
+            "key": "medical_officer",
+            "text": "Medical officer",
+            "value": false
+          },
+          {
+            "key": "assistant_officer",
+            "text": "Assistant Officer",
+            "value": false
+          },
+          {
+            "key": "clinical_officer_or_ass_clinical_officer",
+            "text": "Clinical officer/Assistant clinical officer",
+            "value": false
+          },
+          {
+            "key": "enrolled_nurse",
+            "text": "Enrolled nurse",
+            "value": false
+          },
+          {
+            "key": "ass_nursing_officer",
+            "text": "Assistant nursing officer",
+            "value": false
+          }
+        ],
+        "v_required": {
+          "value": "false"
+        }
+
+      },
+      {
+        "key": "notes",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "edit_text",
+        "hint": "Notes",
+        "v_required": {
+          "value": "true",
+          "err": "Please write a note"
+        }
+      },
+      {
+        "key": "did_intraoperative_adverse_event_occur",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "native_radio",
+        "label": "Did intraoperative adverse event occur",
+        "label_text_style": "bold",
+        "text_color": "#000000",
+
+        "options": [
+          {
+            "key": "yes",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "Yes"
+          },
+          {
+            "key": "no",
+            "openmrs_entity_parent": "",
+            "openmrs_entity": "",
+            "openmrs_entity_id": "",
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "key": "type_of_adverse_event",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+
+        "type": "check_box",
+        "label": "Type of adverse event",
+        "label_text_style": "bold",
+        "options": [
+          {
+            "key": "excessive_skin_removal",
+            "text": "Excessive skin removal",
+            "value": false
+          },
+          {
+            "key": "insufficient_skin_removal",
+            "text": "Insufficient skin removal",
+            "value": false
+          },
+          {
+            "key": "excessive_bleeding",
+            "text": "Excessive bleeding",
+            "value": false
+          }
+        ],
+        "v_required": {
+          "value": "false"
+        }
+
+      }
+
+    ]
+  }
+}
+
+
+

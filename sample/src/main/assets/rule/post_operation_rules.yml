@@ -1,0 +1,14 @@
+---
+name: step1_testing_date
+description: Client tested for HIV as part of MC service
+priority: 1
+condition: "step1_client_tested_hiv_as_part_of_mc.equalsIgnoreCase('yes')"
+actions:
+    - "isRelevant = true"
+---
+name: step1_toaster1
+description: client not referred
+priority: 1
+condition: "step1_client_referred_to.equalsIgnoreCase('client_not_referred')"
+actions:
+    - "isRelevant = true"

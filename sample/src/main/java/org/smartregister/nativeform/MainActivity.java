@@ -35,16 +35,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        findViewById(R.id.native_form_basic).setOnClickListener(this);
         findViewById(R.id.update_radio_button).setOnClickListener(this);
         findViewById(R.id.rules_engine_skip_logic).setOnClickListener(this);
-        findViewById(R.id.numbers_selector_widget).setOnClickListener(this);
-        findViewById(R.id.generic_dialog_button).setOnClickListener(this);
+//        findViewById(R.id.numbers_selector_widget).setOnClickListener(this);
+//        findViewById(R.id.generic_dialog_button).setOnClickListener(this);
 //        findViewById(R.id.validation_form_button).setOnClickListener(this);
 //        findViewById(R.id.expansion_panel_button).setOnClickListener(this);
 //        findViewById(R.id.repeating_group_button).setOnClickListener(this);
-        findViewById(R.id.multiselect_list).setOnClickListener(this);
-        findViewById(R.id.optibp_widget).setOnClickListener(this);
+//        findViewById(R.id.multiselect_list).setOnClickListener(this);
+//        findViewById(R.id.optibp_widget).setOnClickListener(this);
         findViewById(R.id.condom_distro).setOnClickListener(this);
         findViewById(R.id.outlet_registration).setOnClickListener(this);
         findViewById(R.id.Practice_calc).setOnClickListener(this);
+        findViewById(R.id.post_operation).setOnClickListener(this);
+        findViewById(R.id.mc_procedure).setOnClickListener(this);
+        findViewById(R.id.hiv_testing_services).setOnClickListener(this);
 
     }
 
@@ -284,12 +287,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.rules_engine_skip_logic:
                     startForm(REQUEST_CODE_GET_JSON, "rules_engine_demo", null, false);
                     break;
-                case R.id.numbers_selector_widget:
-                    startForm(REQUEST_CODE_GET_JSON, "constraints_demo", null, false);
-                    break;
-                case R.id.generic_dialog_button:
-                    startForm(REQUEST_CODE_GET_JSON, "generic_popup_form", null, false);
-                    break;
+//                case R.id.numbers_selector_widget:
+//                    startForm(REQUEST_CODE_GET_JSON, "constraints_demo", null, false);
+//                    break;
+//                case R.id.generic_dialog_button:
+//                    startForm(REQUEST_CODE_GET_JSON, "generic_popup_form", null, false);
+//                    break;
 //                case R.id.validation_form_button:
 //                    startForm(REQUEST_CODE_GET_JSON, "validation_form", null, false);
 //                    break;
@@ -299,12 +302,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                case R.id.repeating_group_button:
 //                    startForm(REQUEST_CODE_GET_JSON, "repeating_group", null, false);
 //                    break;
-                case R.id.multiselect_list:
-                    startForm(REQUEST_CODE_GET_JSON, "multi_select_list_form", null, false);
-                    break;
-                case R.id.optibp_widget:
-                    startForm(REQUEST_CODE_GET_JSON, "optibp_demo_form", null, false);
-                    break;
+//                case R.id.multiselect_list:
+//                    startForm(REQUEST_CODE_GET_JSON, "multi_select_list_form", null, false);
+//                    break;
+//                case R.id.optibp_widget:
+//                    startForm(REQUEST_CODE_GET_JSON, "optibp_demo_form", null, false);
+//                    break;
                 case R.id.condom_distro:
                     startForm(REQUEST_CODE_GET_JSON, "condom_distro", null, false);
                     break;
@@ -314,6 +317,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case R.id.Practice_calc:
                     startForm(REQUEST_CODE_GET_JSON, "Practice_Calculation", null, false);
+                    break;
+                case R.id.post_operation:
+                    startForm(REQUEST_CODE_GET_JSON, "post_operation", null, false);
+                    break;
+                case R.id.mc_procedure:cedure:
+                    startForm(REQUEST_CODE_GET_JSON, "mc_procedure", null, false);
+                    break;
+                case R.id.hiv_testing_services:
+                startForm(REQUEST_CODE_GET_JSON, "hiv_testing_services", null, false);
                     break;
 
                 default:
