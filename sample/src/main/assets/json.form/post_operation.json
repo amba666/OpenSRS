@@ -209,18 +209,21 @@
         ]
       },
       {
-        "key": "toaster1",
+        "key": "client_has_no_contradiction",
         "openmrs_entity_parent": "",
         "openmrs_entity": "",
         "openmrs_entity_id": "",
         "type": "toaster_notes",
-        "text": "Client has no contraindication",
-        "text_color": "colorPrimary",
-        "toaster_type": "positive",
+        "text": "Link client to CTC services",
+        "text_color": "#000000",
+        "toaster_type": "problem",
+        "v_required": {
+          "value": true
+        },
         "relevance": {
           "rules-engine": {
             "ex-rules": {
-              "rules-file": "post_operation.yml"
+              "rules-file": "sample-relevance-rules.yml"
             }
           }
         }

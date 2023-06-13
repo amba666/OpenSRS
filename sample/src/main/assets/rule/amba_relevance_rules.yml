@@ -1,0 +1,9 @@
+
+---
+name: step1_select_hiv_result_test
+description: hepb immunization status
+priority: 1
+condition: "step1_client_tested_hiv_as_part_of_mc.equalsIgnoreCase('yes')"
+actions:
+    - "isRelevant = true"
+---

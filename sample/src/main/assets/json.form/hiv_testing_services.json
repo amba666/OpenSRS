@@ -117,7 +117,34 @@
             "openmrs_entity_id": "",
             "text": "Indeterminate"
           }
-        ]
+        ],
+        "relevance": {
+          "rules-engine": {
+            "ex-rules": {
+              "rules-file": "sample-relevance-rules.yml"
+            }
+          }
+        }
+      },
+      {
+        "key": "link_client_to_ctc_services",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "toaster_notes",
+        "text": "Link client to CTC services",
+        "text_color": "#000000",
+        "toaster_type": "problem",
+        "v_required": {
+          "value": true
+        },
+        "relevance": {
+          "rules-engine": {
+            "ex-rules": {
+              "rules-file": "sample-relevance-rules.yml"
+            }
+          }
+        }
       },
       {
         "key": "client_offered_hiv_self_test_kits",
@@ -165,8 +192,8 @@
         "openmrs_entity_id": "",
         "options": [
           {
-            "key": "surgical_or_medical",
-            "text": "Surgical /medical",
+            "key": "surgical/medical",
+            "text": "Surgical/medical",
             "value": false
           },
           {
@@ -190,6 +217,26 @@
             "value": false
           }
         ]
+      },
+      {
+        "key": "client_has_the_following_contradictions",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "",
+        "openmrs_entity_id": "",
+        "type": "toaster_notes",
+        "text": "Client has the following contradictions 1. UDS 2. Pallor 3. GUD",
+        "text_color": "#000000",
+        "toaster_type": "problem",
+        "v_required": {
+          "value": true
+        },
+        "relevance": {
+          "rules-engine": {
+            "ex-rules": {
+              "rules-file": "sample-relevance-rules.yml"
+            }
+          }
+        }
       },
       {
         "key": "client_medically_cleared_for_mc_procedure",
@@ -219,12 +266,26 @@
             "text": "No"
           }
         ]
+      },
+
+      {
+        "key": "reason_why_client_not_cleared_for_mc",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "reason",
+        "openmrs_entity_id": "reason",
+        "type": "edit_text",
+        "hint": "Reason why client not cleared for MC",
+        "relevance": {
+          "rules-engine": {
+            "ex-rules": {
+              "rules-file": "sample-relevance-rules.yml"
+            }
+          }
+        }
       }
-
-
-
     ]
   }
+
 }
 
 
